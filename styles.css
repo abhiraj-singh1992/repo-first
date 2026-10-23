@@ -1,0 +1,56 @@
+
+/* 1. Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    min-height: 100vh;
+
+    /* Center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. Heading Styling */
+h1 {
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 30px 50px;
+    margin: 20px;
+
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* 4. Hover Effect */
+h1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 5. Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+        padding: 20px;
+        margin: 15px;
+    }
+}
